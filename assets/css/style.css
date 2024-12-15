@@ -26,9 +26,21 @@ header {
 
 /* Main Content */
 main {
-    background-color: lightblue;
     /* Make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
+}
+
+#container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(../kilimanjaro/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-color: #3b4d61;
+
 }
 
 /* Footer */
