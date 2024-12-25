@@ -38,15 +38,18 @@ body {
     color: #ff4500;
 }
 
-.navg {
-    display: flex;
-    gap: 15px;
+#menu {
+    font-size: 120%;
+    letter-spacing: 4px;
+    list-style-type: none;
 }
 
-.link {
-    color: #ffffff;
-    text-decoration: none;
-    display: flex;
+#menu a {
+    color: #ff4500;
+}
+
+#menu > li {
+    margin-bottom: 1em;
 }
 
 /* Main Content */
