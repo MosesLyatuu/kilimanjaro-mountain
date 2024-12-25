@@ -20,8 +20,29 @@ body {
 
 
 /* Header */
-header {
-    background-color: lightcoral;
+.header {
+    background-color: #3b4d61;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    text-decoration: none;
+    
+}
+
+.navg {
+    display: flex;
+    gap: 15px;
+}
+
+.title {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
 }
 
 /* Main Content */
@@ -35,15 +56,15 @@ main {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url(../kilimanjaro/hero-image.jpg);
+    background-image: linear-gradient(rgba(9,0,77,0.45),rgba(9,0,77,0.45)),url(../kilimanjaro/hero-image.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     background-color: #3b4d61;
 
 }
 
 /* Footer */
 footer {
-    background-color: orange;
+    background-color: #3b4d61;
 }
