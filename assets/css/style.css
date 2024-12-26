@@ -52,6 +52,16 @@ body {
     margin-bottom: 1em;
 }
 
+/* Navabar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #3b4d61;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    display: none;
+}
+
 /* Main Content */
 main {
     /* Make main element take up any surplus space to push footer down*/
