@@ -113,3 +113,57 @@ main {
 footer {
     background-color: #3b4d61;
 }
+
+/* Media query: tablets and larger (768px and up) */
+@media  screen and (min-width: 344px) {
+    .title {
+        font-size: 100%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    main {
+        /* Make main element take up any surplus space to push footer down*/
+        flex: 1 0 auto;
+        margin-top: 32px;
+    }
+    
+}
+
+@media  screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        width: fit-content;
+        padding: 1rem;
+    }
+
+    #menu {
+        position: relative;
+        display: flex;
+        font-size: 100%;
+        letter-spacing: 2px;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    main {
+        /* Make main element take up any surplus space to push footer down*/
+        flex: 1 0 auto;
+        margin-top: 70px;
+    }
+
+    .title {
+        position: relative;
+        font-size: 100%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+}
