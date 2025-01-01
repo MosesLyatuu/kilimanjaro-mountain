@@ -21,14 +21,39 @@ body {
 
 /* Header */
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #3b4d61;
     padding: 0 1rem;
     position: fixed;
+    width: 100%;
     z-index: 99;
 }
 
 .header a {
     text-decoration: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Style for toggle label*/
+.checkbox-container .nav-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Nav toggle */
+#nav-toggle:checked ~ .checkbox-container ~ nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
 }
 
 .title {
@@ -54,8 +79,10 @@ body {
 
 /* Navabar styles with dropdown toggle */
 nav {
+    display: none;
     position: absolute;
     background-color: #3b4d61;
+    top: 100%;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -66,6 +93,7 @@ nav {
 main {
     /* Make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
+    margin-top: 79px;
 }
 
 #container {
