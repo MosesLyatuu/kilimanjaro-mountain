@@ -114,7 +114,7 @@ footer {
     background-color: #3b4d61;
 }
 
-/* Media query: tablets and larger (768px and up) */
+/* Media query: tablets and larger (344px and up) */
 @media  screen and (min-width: 344px) {
     .title {
         font-size: 100%;
@@ -130,6 +130,7 @@ footer {
     
 }
 
+/* Media query: tablets and larger (768px and up) */
 @media  screen and (min-width: 768px) {
     /* Header */
     nav {
@@ -153,7 +154,7 @@ footer {
     main {
         /* Make main element take up any surplus space to push footer down*/
         flex: 1 0 auto;
-        margin-top: 70px;
+        margin-top: 69px;
     }
 
     .title {
@@ -165,5 +166,12 @@ footer {
 
     .nav-toggle {
         display: none;
+    }
+}
+
+/* large devices (Laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #ffffff;
     }
 }
